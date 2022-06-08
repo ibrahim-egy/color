@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Color Palette Generator</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<section id="hero">
+    <div class="hero-container">
+        <h3>Color Palette<strong> Generator</strong></h3>
+        <h1>Top 10 most common colours in that image.</h1>
+        <br>
+
+        <form action="{{ url_for('result') }}" method="POST" enctype="multipart/form-data">
+            <input type="file" class="form-control" name="file">
+            <br>
+            <input type="submit" class="btn btn-secondary">
+        </form>
+    </div>
+</section>
+
+<main id="main">
+
+</main>
+
+<!-- Vendor JS Files -->
+<script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

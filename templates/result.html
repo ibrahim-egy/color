@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+
+
+    <title>Result</title>
+</head>
+<body>
+<div class="box-2">
+
+    <table style="text-align: center; width: 55%; padding: 100px;">
+        <tr>
+            <th>
+                <h1>Result</h1>
+            </th>
+            <th>
+                <h1>RGB</h1>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <div class="image-result">
+                    <img src="{{ image }}" alt="image"><br>
+                </div>
+            </td>
+
+            <td>
+                {% for color in top_colors %}
+                    <button id="p1" class="btn btn btn-outline" style="background-color:rgb{{ color }}; width: 90%;">
+                        {{ color }}
+                    </button>
+                <br>
+                <br>
+                {% endfor %}
+            </td>
+
+        </tr>
+
+    </table>
+    <br>
+    <br>
+    <a href="{{ url_for('home') }}" class="btn btn-warning">Return</a>
+
+
+</div>
+<script src="static/assets/js/script.js"></script>
+</body>
+</html>
