@@ -25,9 +25,14 @@
         <br>
 
         <form action="{{ url_for('result') }}" method="POST" enctype="multipart/form-data">
-            <input type="file" class="form-control" name="file">
+            <label for="file" type="btn" class="btn btn-light">Upload</label>
+            <input id="file" type="file" class="form-control" name="file" hidden onchange="show(event)">
             <br>
-            <input type="submit" class="btn btn-secondary">
+            
+            <div class="img-box" style="visibility: hidden;">
+                <img id="img" src="" alt="" style="visibility: hidden;">
+            </div>
+            <input id="submit-btn" type="submit" class="btn btn-dark" style="visibility: hidden;">
         </form>
     </div>
 </section>
@@ -41,7 +46,7 @@
 <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
-
+<script src="static/assets/js/script.js"></script>
 </body>
 
 </html>
