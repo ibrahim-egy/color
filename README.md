@@ -1,4 +1,4 @@
-# Color Pallette Generator :artist:
+# Color Pallette Generator :mage:
 
 
 ### Project Objective
