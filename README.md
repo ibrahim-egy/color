@@ -1,4 +1,4 @@
-# Color Pallette Generator :cloud_with_rain:
+# Color Pallette Generator :artist:
 
 
 ### Project Objective
