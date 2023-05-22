@@ -9,6 +9,7 @@ This project was about creating a web app that extract top 10 colors from given 
 #### Used Tech
 - HTML 
 - CSS
+- Vanilla JavaScript
 - Python (Flask)
 
 ### Demo
